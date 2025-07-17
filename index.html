@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Happy Birthday!</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Sarabun:wght@400;700&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&display=swap" rel="stylesheet" />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Pacifico&family=Sarabun&display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+<body class="flex flex-col items-center justify-center min-h-screen text-center relative px-4 sm:px-6 md:px-10 fade-in">
+    <!-- ลูกโป่ง -->
+    <div id="balloons-container" class="pointer-events-none"></div>
+    <!-- Confetti -->
+    <div id="confetti-container" class="pointer-events-none"></div>
+
+    <!-- Container หลัก -->
+    <div class="container mx-auto fade-in max-w-5xl">
+        <header class="text-center mb-10">
+            <h1 class="pacifico text-4xl sm:text-6xl md:text-7xl text-pink-500 drop-shadow-lg mb-4 animate-bounce">
+                Happy birthday!
+            </h1>
+            <p class="text-xl sm:text-2xl md:text-3xl text-pink-700">My darling! 🎉</p>
+        </header>
+
+        <div class="flex justify-center mb-10">
+            <div class="animate-bounce text-base sm:text-lg md:text-xl">
+                🎂 <span class="text-pink-600 font-semibold">ของขวัญชิ้นนี้ของมอบให้คุณ</span> 🎂
+            </div>
+        </div>
+
+        <!-- รูปเจ้าของวันเกิดพร้อมกรอบไฟนีออน -->
+        <div class="birthday-img-wrapper">
+            <img src="your-image.jpg" alt="Birthday Person" class="birthday-img" />
+        </div>
+
+        <!-- การ์ดข้อความ (Responsive grid) -->
+        <div class="container mx-auto px-4 sm:px-6 md:px-10">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-10 mb-16 mt-10">
+                <!-- Card 1 -->
+                <div class="card-flip">
+                    <div class="card-inner">
+                        <div class="card-front bg-pink-200 shadow-2xl p-6">
+                            <div class="text-center">
+                                <div class="text-5xl mb-4">❤️</div>
+                                <h3 class="text-xl font-bold text-pink-700">วางเมาส์ที่นี่!</h3>
+                                <p class="text-pink-600">ดูข้อความพิเศษ</p>
+                            </div>
+                        </div>
+                        <div class="card-back bg-pink-300 shadow-2xl p-6">
+                            <div class="text-center">
+                                <h3 class="text-2xl font-bold text-pink-700 mb-4">รัก</h3>
+                                <p class="text-pink-800">ขอบคุณที่รักกัน</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="card-flip">
+                    <div class="card-inner">
+                        <div class="card-front bg-pink-200 shadow-2xl p-6">
+                            <div class="text-center">
+                                <div class="text-5xl mb-4">🎁</div>
+                                <h3 class="text-xl font-bold text-pink-700">วางเมาส์ที่นี่!</h3>
+                                <p class="text-pink-600">ดูข้อความพิเศษ</p>
+                            </div>
+                        </div>
+                        <div class="card-back bg-pink-300 shadow-2xl p-6">
+                            <div class="text-center">
+                                <h3 class="text-2xl font-bold text-pink-700 mb-4">ความทรงจำ</h3>
+                                <p class="text-pink-800">ขอบคุณสำหรับความทรงจำดีๆ ที่เรามีร่วมกัน!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="card-flip">
+                    <div class="card-inner">
+                        <div class="card-front bg-pink-200 shadow-2xl p-6">
+                            <div class="text-center">
+                                <div class="text-5xl mb-4">🎂</div>
+                                <h3 class="text-xl font-bold text-pink-700">วางเมาส์ที่นี่!</h3>
+                                <p class="text-pink-600">ดูข้อความพิเศษ</p>
+                            </div>
+                        </div>
+                        <div class="card-back bg-pink-300 shadow-2xl p-6">
+                            <div class="text-center">
+                                <h3 class="text-2xl font-bold text-pink-700 mb-4">คำอวยพร</h3>
+                                <p class="text-pink-800">ขอให้บี้มีปีที่เต็มไปด้วยรอยยิ้มและความสุข!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <footer><p>© Punyapat Kongwoon</p></footer>
+    <script src="script.js"></script>
+
+</html>
